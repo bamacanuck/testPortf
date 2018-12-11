@@ -36,6 +36,38 @@ $(document).ready(function(){
                 $(this).off("touchmove");
         });
     });
-        
+
+
+    $(document).keydown(function(e) {
+        if (e.keyCode === 38) {
+           // Previous
+           $(".carousel").carousel('prev');
+           return false;
+        }
+        if (e.keyCode === 40) {
+           // Next
+           $(".carousel").carousel('next');
+           return false;
+        }
     });
+
+    //     $("#myCarousel").on("touchstart", function(event){
+        
+    //         var yClick = event.originalEvent.touches[0].pageY;
+    //         $(this).one("touchmove", function(event){
+
+    //         var yMove = event.originalEvent.touches[0].pageY;
+    //         if( Math.floor(yClick - yMove) > 1 ){
+    //             $(".carousel").carousel('next');
+    //         }
+    //         else if( Math.floor(yClick - yMove) < -1 ){
+    //             $(".carousel").carousel('prev');
+    //         }
+    //     });
+    //     $(".carousel").on("touchend", function(){
+    //             $(this).off("touchmove");
+    //     });
+    // });
+        
+});
     
