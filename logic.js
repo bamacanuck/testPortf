@@ -5,7 +5,7 @@ $(document).ready(function(){
         });
     
     // scroll slides on mouse scroll 
-    $('#myCarousel').bind('mousewheel DOMMouseScroll', function(e){
+    $('#myCarousel').bind('wheel mousewheel DOMMouseScroll', function(e){
     
             if(e.originalEvent.wheelDelta > 0 || e.originalEvent.detail < 0) {
                 $(this).carousel('prev');
