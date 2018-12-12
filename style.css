@@ -21,6 +21,7 @@ article {
   width:100%;
   background-position:center center;
   background-size:cover;
+  overflow: hidden;
 }
 .slide-wrapper{display:inline;}
 .slide-wrapper .container{padding:0px;}
